@@ -1,0 +1,6 @@
+[submodule "vendor/owl"]
+	path = vendor/owl
+	url = git://github.com/BGSU-LITS/Owl.git
+[submodule "vendor/cactus"]
+	path = vendor/cactus
+	url = git://github.com/daveWid/cactus.git

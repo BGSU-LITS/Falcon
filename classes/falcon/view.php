@@ -32,6 +32,16 @@ abstract class Falcon_View extends \Owl\View
 	}
 
 	/**
+	 * Gets flash messages.
+	 *
+	 * @return array|boolean false
+	 */
+	public function message()
+	{
+		return Message::get();
+	}
+
+	/**
 	 * Loading of mustache templates.
 	 *
 	 * @param  string $file  The path of the template file (relative to the $templates_directory)

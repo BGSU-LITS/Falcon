@@ -52,4 +52,15 @@ abstract class Falcon_View extends \Owl\View
 		return Falcon_View::load($file);
 	}
 
+	/**
+	 * Gets the filename of the mustache template
+	 *
+	 * @return string
+	 */
+	protected function get_file()
+	{
+		$file = str_replace(array("View_", "_"), array("", DIRECTORY_SEPARATOR), get_called_class());
+		return strtolower($file).".mustache";
+	}
+
 }
